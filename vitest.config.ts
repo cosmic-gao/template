@@ -12,8 +12,6 @@ export default defineConfig({
       '**/dist/**',
       '**/.{idea,git,cache,output,temp}/**',
       '**/node_modules/**',
-      '**/{stylelint,eslint}.config.*',
-      '.prettierrc.mjs',
     ],
   },
 });
