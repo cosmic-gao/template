@@ -64,7 +64,6 @@ export function useVbenModal<TParentModalProps extends ModalProps = ModalProps>(
             slots,
           );
       },
-      // eslint-disable-next-line vue/one-component-per-file
       {
         name: 'VbenParentModal',
         inheritAttrs: false,
@@ -123,7 +122,6 @@ export function useVbenModal<TParentModalProps extends ModalProps = ModalProps>(
           slots,
         );
     },
-    // eslint-disable-next-line vue/one-component-per-file
     {
       name: 'VbenModal',
       inheritAttrs: false,

@@ -36,9 +36,7 @@ const emit = defineEmits<{
 
 const PI: number = Math.PI;
 enum CanvasOpr {
-  // eslint-disable-next-line no-unused-vars
   Clip = 'clip',
-  // eslint-disable-next-line no-unused-vars
   Fill = 'fill',
 }
 

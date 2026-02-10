@@ -50,7 +50,6 @@ import { extendsDefaultFormatter } from './extends';
 // 是否加载过
 let isInit = false;
 
-// eslint-disable-next-line import/no-mutable-exports
 export let useTableForm: typeof useVbenForm;
 
 // 部分组件，如果没注册，vxe-table 会报错，这里实际没用组件，只是为了不报错，同时可以减少打包体积

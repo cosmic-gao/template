@@ -64,7 +64,6 @@ export function useVbenDrawer<
             slots,
           );
       },
-      // eslint-disable-next-line vue/one-component-per-file
       {
         name: 'VbenParentDrawer',
         inheritAttrs: false,
@@ -107,7 +106,6 @@ export function useVbenDrawer<
       return () =>
         h(VbenDrawer, { ...props, ...attrs, drawerApi: extendedApi }, slots);
     },
-    // eslint-disable-next-line vue/one-component-per-file
     {
       name: 'VbenDrawer',
       inheritAttrs: false,

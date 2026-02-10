@@ -6,9 +6,7 @@
 
 - 🚀 基于 Node.js 的现代化 Shell 工具
 - 📦 支持模块化开发和按需加载
-- 🔍 提供依赖检查和分析功能
-- 🔄 支持循环依赖扫描
-- 📝 提供包发布检查功能
+- 📝 提供工作区文件生成能力
 
 ## 安装
 
@@ -51,6 +49,4 @@ pnpm vsh [command]
 
 ## 命令列表
 
-- `vsh check-deps`: 检查项目依赖
-- `vsh scan-circular`: 扫描循环依赖
-- `vsh publish-check`: 检查包发布配置
+- `vsh code-workspace`: 生成/更新 VS Code 工作区文件

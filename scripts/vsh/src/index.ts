@@ -3,17 +3,11 @@ import { colors, consola } from '@vben/node-utils';
 import { cac } from 'cac';
 
 import { version } from '../package.json';
-import { defineCheckCircularCommand } from './check-circular';
-import { defineDepcheckCommand } from './check-dep';
 import { defineCodeWorkspaceCommand } from './code-workspace';
-import { definePubLintCommand } from './publint';
 
 // 命令描述
 const COMMAND_DESCRIPTIONS = {
-  'check-circular': 'Check for circular dependencies',
-  'check-dep': 'Check for unused dependencies',
   'code-workspace': 'Manage VS Code workspace settings',
-  publint: 'Check package.json files for publishing standards',
 } as const;
 
 /**
@@ -24,10 +18,7 @@ async function main(): Promise<void> {
     const vsh = cac('vsh');
 
     // Register commands
-    definePubLintCommand(vsh);
     defineCodeWorkspaceCommand(vsh);
-    defineCheckCircularCommand(vsh);
-    defineDepcheckCommand(vsh);
 
     // Handle invalid commands
     vsh.on('command:*', ([cmd]) => {
